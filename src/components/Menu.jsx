@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Offcanvas, Button, Nav } from "react-bootstrap";
 import { FaBars } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Menu() {
   const [show, setShow] = useState(false);
@@ -35,30 +36,37 @@ function Menu() {
         </Offcanvas.Header>
         <Offcanvas.Body>
           <Nav className='flex-column text-center'>
-            <Nav.Link
-              href='#home'
+            <Link
+              to={"/"}
               className='text-white fs-4 my-2'
+              style={{ textDecoration: "none", fontWeight: "bold" }}
               onClick={handleClose}>
               Home
-            </Nav.Link>
-            <Nav.Link
-              href='#about'
+            </Link>
+            <Link
+              to={"about"}
               className='text-white fs-4 my-2'
+              style={{ textDecoration: "none", fontWeight: "bold" }}
               onClick={handleClose}>
               About
-            </Nav.Link>
-            <Nav.Link
-              href='#services'
+            </Link>
+            <Link
+              to={"projects"}
               className='text-white fs-4 my-2'
+              style={{ textDecoration: "none", fontWeight: "bold" }}
               onClick={handleClose}>
-              Services
-            </Nav.Link>
-            <Nav.Link
-              href='#contact'
+              Projects
+            </Link>
+            <Link
+              to={"contact"}
               className='text-white fs-4 my-2'
+              style={{
+                textDecoration: "none",
+                fontWeight: "bold",
+              }}
               onClick={handleClose}>
               Contact
-            </Nav.Link>
+            </Link>
           </Nav>
         </Offcanvas.Body>
       </Offcanvas>

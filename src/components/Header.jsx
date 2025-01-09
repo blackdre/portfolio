@@ -20,7 +20,7 @@ const Header = () => {
 
         {/* <!-- Desktop Logo --> */}
         <div className='lc-block position-absolute start-50 translate-middle top-50 d-none d-lg-block'>
-          <a editable='inline' className='navbar-brand mx-auto' href='/'>
+          <a className='navbar-brand mx-auto' href='/'>
             <img
               src={logo}
               width='200'
