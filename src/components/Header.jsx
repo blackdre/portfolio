@@ -1,6 +1,7 @@
 import { FaBars } from "react-icons/fa";
 import { SiGithub, SiLinkedin, SiX } from "react-icons/si";
 import logo from "../assets/logo.png";
+import Menu from "./Menu";
 
 const Header = () => {
   return (
@@ -43,65 +44,8 @@ const Header = () => {
           </a>
         </div>
 
-        {/* <!-- WordPress Menu --> */}
-        <button
-          className='navbar-toggler border-0'
-          data-bs-toggle='offcanvas'
-          data-bs-target='#navbarNavHamburger'
-          aria-controls='navbarNavHamburger'>
-          <FaBars></FaBars>
-        </button>
-
-        {/* <!-- To customize and view the offcanvas, utilize the "show" className, but make sure to remove it once you are finished. --> */}
-        <div
-          className='offcanvas offcanvas-end shadow bg-dark'
-          tabIndex='-1'
-          id='navbarNavHamburger'
-          aria-labelledby='navbarNavHamburgerLabel'>
-          <div className='offcanvas-header'>
-            <button
-              type='button'
-              className='btn-close btn-close-white'
-              data-bs-dismiss='offcanvas'
-              aria-label='Close'></button>
-          </div>
-          <div className='offcanvas-body'>
-            <div className='row'>
-              <div className='col-12'>
-                <div className='lc-block mb-4'>
-                  <div lc-helper='shortcode' className='live-shortcode me-auto'>
-                    {/* <!--  lc_nav_menu --> */}
-                    <ul id='menu-menu-1' className='navbar-nav'>
-                      <li className='menu-item menu-item-type-custom menu-item-object-custom nav-item nav-item-32739'>
-                        <a
-                          href='https://library.livecanvas.com/starters'
-                          className='nav-link '>
-                          BS5 Page Templates
-                        </a>
-                      </li>
-                      <li className='menu-item menu-item-type-custom menu-item-object-custom menu-item-home nav-item nav-item-32738'>
-                        <a
-                          href='https://library.livecanvas.com/sections/'
-                          className='nav-link '>
-                          BS5 Snippets
-                        </a>
-                      </li>
-                    </ul>
-                    {/* <!-- /lc_nav_menu --> */}
-                  </div>
-                </div>
-                <div className='lc-block d-grid gap-3'>
-                  <a className='btn btn-outline-primary' href='#' role='button'>
-                    Sign in
-                  </a>
-                  <a className='btn btn-primary' href='#' role='button'>
-                    Sign up
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        {/* <!-- Offcanvas --> */}
+        <Menu />
         {/* <!-- END OFFCANVAS --> */}
       </div>
     </nav>

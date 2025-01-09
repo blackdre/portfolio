@@ -325,3 +325,22 @@ input[type="submit"]:hover {
 .btn {
   border-radius: 0 !important;
 }
+
+.fullpage-menu .offcanvas-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.fullpage-menu .offcanvas-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fullpage-menu .nav-link {
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.fullpage-menu .nav-link:hover {
+  color: #f8d7da; /* Example hover color */
+}
