@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Offcanvas, Button, Nav } from "react-bootstrap";
 import { FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import "../assets/Menu.css";
 
 function Menu() {
   const [show, setShow] = useState(false);

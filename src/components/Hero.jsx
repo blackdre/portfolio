@@ -17,12 +17,12 @@ import {
   SiTypescript,
 } from "react-icons/si";
 import { FaArrowRight, FaDownload } from "react-icons/fa";
-import { VscVscode } from "react-icons/vsc";
 import { Canvas } from "@react-three/fiber";
 import Me from "../assets/untitled.glb";
 import Model from "./Model";
 import { Bounds, Environment, OrbitControls } from "@react-three/drei";
 import { Button } from "react-bootstrap";
+import HeadingText from "./HeadingText";
 
 const Hero = () => {
   return (
@@ -48,7 +48,7 @@ const Hero = () => {
           <div className='mb-4'>
             <div>
               <h1 className='rfs-30 fw-bold text-warning'>
-                Hi I&apos;m Blessing
+                <HeadingText />
               </h1>
             </div>
           </div>
