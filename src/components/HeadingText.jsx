@@ -1,12 +1,12 @@
 import BlurText from "./BlurText";
 
-const HeadingText = () => {
+const HeadingText = ({ text }) => {
   const handleAnimationComplete = () => {
     console.log("Animation completed!");
   };
   return (
     <BlurText
-      text="Hi, I'm Blesssing"
+      text={text}
       delay={650}
       animateBy='words'
       direction='top'

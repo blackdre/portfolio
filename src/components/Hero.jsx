@@ -48,7 +48,7 @@ const Hero = () => {
           <div className='mb-4'>
             <div>
               <h1 className='rfs-30 fw-bold text-warning'>
-                <HeadingText />
+                <HeadingText text='Hi, I am Blessing' />
               </h1>
             </div>
           </div>

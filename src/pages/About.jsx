@@ -1,3 +1,5 @@
+import HeadingText from "../components/HeadingText";
+
 const About = () => {
   return (
     <div
@@ -7,12 +9,18 @@ const About = () => {
         <div className='col-12 col-md-7 col-lg-6'>
           <div className='lc-block mb-4'>
             <div>
-              <h1>The quick brown fox jumps.</h1>
-              <p>
-                Aenean vel nisi in ipsum congue fermentum et ut arcu. Proin leo
-                diam, vulputate eu tellus ac, mattis cursus nunc. Aenean vel
-                nisi in ipsum congue fermentum et ut arcu. Proin leo diam,
-                vulputate eu tellus ac, mattis cursus nunc.
+              <h1 className='rfs-30 fw-bold text-warning'>
+                <HeadingText text='About Me' />
+              </h1>
+              <p className='lead text-info'>
+                I am a Software Developer who is interested in Full Stack and
+                Python Engineer roles. I am most comfortable working with
+                Python, Django and React, however, I am open to working with and
+                learning new technologies. I&apos;m looking for a challenge,
+                growth and to be part of a team. I feel that I have learned a
+                lot on my own, but to truly master my trade I need to be a part
+                of an organization. I&apos;m motivated, passionate, and driven
+                to deliver the only thing missing is a workplace.
               </p>
             </div>
           </div>
