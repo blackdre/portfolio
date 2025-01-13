@@ -8,7 +8,7 @@ const Header = () => {
     <nav className='navbar navbar-dark bg-transparent'>
       <div className='container py-3'>
         {/* <!-- Mobile Logo --> */}
-        <a className='navbar-brand d-lg-none' href=''>
+        <a className='navbar-brand d-lg-none' href='/'>
           <img
             src={logo}
             width='150'
@@ -33,13 +33,13 @@ const Header = () => {
         {/* <!-- end Desktop Logo--> */}
 
         <div className='lc-block d-none d-lg-block'>
-          <a>
+          <a href='https://github.com/blackdre'>
             <SiGithub className='text-warning' size={24} />
           </a>
-          <a>
+          <a href='https://www.linkedin.com/in/sbutheitguy/'>
             <SiLinkedin className='text-warning m-2' size={24} />
           </a>
-          <a>
+          <a href='https://x.com/blessing_miya'>
             <SiX className='text-warning' size={24} />
           </a>
         </div>

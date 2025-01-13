@@ -23,22 +23,24 @@ const Contact = () => {
           <div className='lc-block mb-5'>
             <a
               className='btn btn-lg btn-outline-success mx-1'
-              href='https://goo.gl/maps/zy3NkDKV3x4iyUkL9'
+              href='https://x.com/blessing_miya'
               role='button'
+              target='_blank'
               style={{ borderRadius: "0px" }}>
               <SiX />
             </a>
             <a
               className='btn btn-lg btn-outline-primary mx-1'
-              href='https://goo.gl/maps/zy3NkDKV3x4iyUkL9'
+              href='mailto:blessing@blessingm.co.za'
               role='button'
               style={{ borderRadius: "0px" }}>
               <FaEnvelope />
             </a>
             <a
               className='btn btn-lg btn-outline-info mx-1'
-              href='https://goo.gl/maps/zy3NkDKV3x4iyUkL9'
+              href='https://www.linkedin.com/in/sbutheitguy/'
               role='button'
+              target='_blank'
               style={{ borderRadius: "0px" }}>
               <FaLinkedin />
             </a>
