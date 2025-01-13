@@ -1,4 +1,3 @@
-import HeadingText from "../components/HeadingText";
 import bless from "../assets/bless.png";
 
 const About = () => {
@@ -24,9 +23,9 @@ const About = () => {
             </div>
           </div>
           {/* <!-- /lc-block --> */}
-          <div className='lc-block d-flex mb-5'>
+          {/* <div className='lc-block d-flex mb-5'>
             <div className='pe-3'>
-              <h3 className='h2 mb-0 text-secondary'>100%</h3>
+              <h3 className='h2 mb-0 text-success'>80%</h3>
               <span className='mb-0 text-muted'> Satisfaction </span>
             </div>
             <div className='border-start'></div>
@@ -39,7 +38,7 @@ const About = () => {
               <h3 className='h2 mb-0 text-secondary'>+40k</h3>
               <span className='mb-0 text-muted'> Products </span>
             </div>
-          </div>
+          </div> */}
           {/* <!-- /lc-block --> */}
         </div>
         {/* <!-- /col --> */}
