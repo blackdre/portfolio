@@ -1,4 +1,5 @@
 import HeadingText from "../components/HeadingText";
+import bless from "../assets/bless.png";
 
 const About = () => {
   return (
@@ -9,9 +10,7 @@ const About = () => {
         <div className='col-12 col-md-7 col-lg-6'>
           <div className='lc-block mb-4'>
             <div>
-              <h1 className='rfs-30 fw-bold text-warning'>
-                <HeadingText text='About Me' />
-              </h1>
+              <h1 className='rfs-30 fw-bold text-warning'>More about me</h1>
               <p className='lead text-info'>
                 I am a Software Developer who is interested in Full Stack and
                 Python Engineer roles. I am most comfortable working with
@@ -49,7 +48,7 @@ const About = () => {
             <img
               alt=''
               className='img-fluid mx-auto d-block'
-              src='https://cdn.livecanvas.com/media/svg/undraw-sample/undraw_connected_world_wuay.svg'
+              src={bless}
               loading='lazy'
             />
           </div>

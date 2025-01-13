@@ -2,7 +2,10 @@ import { useEffect } from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import AOS from "aos";
 // import "../assets/Projects.css";
-import logo from "../assets/logo-with-bg.png";
+import tefl from "../assets/logo-with-bg.png";
+import thare from "../assets/thare.png";
+import chips from "../assets/chips.png";
+
 import {
   SiApache,
   SiCss3,
@@ -41,7 +44,7 @@ const Projects = () => {
       description:
         "TEFL International is an online platform dedicated to reselling accredited TEFL (Teaching English as a Foreign Language) courses from multiple trusted providers. The website enables aspiring English teachers to easily explore, compare, and book TEFL certification programs that align with their career goals. With a user-friendly interface, customers can filter courses by location, provider, and format, making it easier than ever to find the ideal course to begin their teaching journey abroad",
       date: "2025-01-01",
-      logo: `${logo}`,
+      logo: `${tefl}`,
       techStack: [
         <SiHtml5 key='html5' className='text-primary' />,
         <SiCss3 key='css3' className='text-warning' />,
@@ -55,24 +58,11 @@ const Projects = () => {
       URL: "https://teflinternational.world/",
     },
     {
-      title: "Chipstech electronics",
-      description: "This is the description for step 2.",
-      date: "2025-02-15",
-      logo: `${logo}`,
-      techStack: [
-        <SiHtml5 key='html5' />,
-        <SiCss3 key='css3' />,
-        <SiJavascript key='javascript' />,
-        <SiReact key='react' />,
-        <SiSupabase key='supabase' />,
-        <SiDigitalocean key='digitalocean' />,
-      ],
-    },
-    {
       title: "Kuyanda Thare",
-      description: "This is the description for step 3.",
+      description:
+        "Kuyanda Commodities is a company that is in the funeral insurance business. Kuyanda thare is their funeral insurance management app that allows them to save and manage their customers data. It also allows them to manage their funeral policies and payments and stokvels.",
       date: "2025-03-10",
-      logo: `${logo}`,
+      logo: `${thare}`,
       techStack: [
         <SiHtml5 key='html5' />,
         <SiCss3 key='css3' />,
@@ -89,11 +79,19 @@ const Projects = () => {
       ],
     },
     {
-      title: "Step 4",
-      description: "This is the description for step 4.",
+      title: "Chipstech electronics",
+      description:
+        "Chipstech is a small electronics repair shop located in Harrismith FS, South Africa. They are a small business that does repairs on electronics such as laptops, phones, and other electronics. They also do repairs on printers and other electronics. They are a small business that does repairs on electronics such as laptops, phones, and other electronics. They also do repairs on printers and other electronics.",
       date: "2025-04-20",
-      logo: `${logo}`,
-      techStack: [<SiReact key='react' />, <SiSupabase key='supabase' />],
+      logo: `${chips}`,
+      techStack: [
+        <SiHtml5 key='html5' />,
+        <SiCss3 key='css3' />,
+        <SiJavascript key='javascript' />,
+        <SiReact key='react' />,
+        <SiSupabase key='supabase' />,
+        <SiDigitalocean key='digitalocean' />,
+      ],
     },
   ];
 
@@ -104,15 +102,21 @@ const Projects = () => {
           <Col md={8} data-aos='fade-up'>
             <div className='card border-warning bg-transparent mb-3 '>
               <div className='card-body'>
-                <h1 className='card-title text-warning'>{event.title}</h1>
+                <h1 className='card-title'>
+                  <a className='nav nav-link text-warning' href={event.URL}>
+                    {event.title}
+                  </a>
+                </h1>
                 <hr className='text-warning border-warning' />
                 <Row>
                   <Col md={3}>
-                    <img
-                      src={event.logo}
-                      alt={event.title}
-                      className='img-fluid'
-                    />
+                    <a href={event.URL} target='_blank' rel='noreferrer'>
+                      <img
+                        src={event.logo}
+                        alt={event.title}
+                        className='img-fluid'
+                      />
+                    </a>
                   </Col>
                   <Col md={9}>
                     <h5 className='card-text text-info'>{event.description}</h5>
