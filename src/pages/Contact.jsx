@@ -53,7 +53,7 @@ const Contact = () => {
               </h2>
             </div>
           </div>
-          <div className='lc-block mb-4'>
+          {/* <div className='lc-block mb-4'>
             <div>
               <h2 className='fw-bolder text-warning'>Working Hours</h2>
             </div>
@@ -63,7 +63,7 @@ const Contact = () => {
               <p>Monday to Friday: 07:00 – 19:45</p>
               <p>Saturday to Sunday: 11:00 – 17:00</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
